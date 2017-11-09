@@ -77,9 +77,10 @@ Benchmark
 **System configuration**. One AWS EC2 instance of type c4.8xlarge was used. It
 consists of the following components:
 
-* CPU: 36 virtual cores
+* CPU: 36 virtual cores, 64-bit
 * Memory: 60 GB
 * Storage: Elastic Block Storage (EBS)
+* Operating System: Ubuntu 14.04.5 LTS
 
 **Datasets**. Two datasets were used.
 
@@ -94,6 +95,7 @@ from the training data. After running predictions using treelite and XGBoost
 (latter with :py:meth:`xgboost.Booster.predict`), we measured throughput as
 the number of lines predicted per second.
 
+`Download the benchmark script <_static/benchmark.py>`_
 
 ********
 Contents
